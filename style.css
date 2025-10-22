@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background: #1b2631;
+    line-height: 1.4;
+}
+
+/* Navbar */
+header {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.608);
+  z-index: -1;
+}
+
+
+/* Button */
+.btn {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 22px 80px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* About */
+.about {
+  padding: 100px 10%;
+  background: #f9fafb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-alt-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-alt-image img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.259);
+  pointer-events: none;
+}
+
+.about-alt-content {
+  max-width: 600px;
+}
+
+.about-alt-content h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about-main {
+  font-size: 20px;
+  color: #0f172a;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-sub {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* Projects */
+.projects {
+  padding: 80px 10%;
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.projects-header h2 {
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.project-item {
+  text-align: left;
+}
+
+.project-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-item img:hover {
+  transform: scale(1.02);
+}
+
+.project-item h3 {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.project-item p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Tech Tags */
+.tech-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tags span {
+  background: #f4f4f4;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.tech-tags span:hover {
+  background: #111;
+  color: #fff;
+}
+
+
+/*Contact*/
+.contact {
+  padding: 90px 10%;
+  background: #f9f9f9;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+.contact-container p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact-link {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 8px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  background: #111;
+  color: #fff;
+}
+
+
+/*Footer*/
+.footer {
+  background: #111;
+  color: #ccc;
+  padding: 30px 10%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
