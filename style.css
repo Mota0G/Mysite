@@ -435,11 +435,15 @@ nav ul li a:hover {
   .contact-info {
     flex-direction: column;
     gap: 10px;
+    max-width: 350px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .contact-item {
-    width: 80%;
+    width: 100%;
     justify-content: center;
+    padding: 15px 25px;
   }
 
   .footer {
