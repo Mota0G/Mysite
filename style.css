@@ -14,14 +14,23 @@ body {
   color: #ffffff;
   background: #1b2631;
   line-height: 1.4;
+  padding-top: 70px;
 }
 
 /*HEADER*/
 header {
   width: 100%;
-  padding: 20px 60px;
+  padding: 15px 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1b2631;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: 70px;
 }
 
 .logo {
@@ -73,7 +82,8 @@ nav ul li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.608);
+  /* MODIFIED: Increased opacity and added a subtle vertical gradient for better text contrast */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 100%);
   z-index: -1;
 }
 
@@ -81,48 +91,51 @@ nav ul li a:hover {
   position: relative;
   z-index: 2;
   text-align: center;
-  width: 90%;
-  transform: translateY(-60px);
+  max-width: 800px;
+  padding: 0 20px;
 }
 
 .hero-title {
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 5rem;
   text-transform: uppercase;
-  line-height: 1.1;
+  line-height: 0.95;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   opacity: 0;
-  animation: slideDown 1s ease-out forwards;
+  animation: slideDown 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
 .hero-title span {
   display: block;
   color: #3498db;
+  font-weight: 900;
 }
 
 .hero-subtitle {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  font-style: italic;
-  font-family: 'Georgia', serif;
-  color: #e0e0e0;
+  margin-top: 25px;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #c0c0c0;
+  letter-spacing: 1px;
   opacity: 0;
-  animation: fadeInUp 1.3s ease-out 0.6s forwards;
+  animation: fadeInUp 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s forwards;
 }
 
 .hero-btn {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 50px;
   opacity: 0;
-  animation: fadeInUp 1.3s ease-out 1s forwards;
+  animation: fadeInUp 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
 }
 
 /*ANIMATIONS*/
 @keyframes slideDown {
   from {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
@@ -133,7 +146,7 @@ nav ul li a:hover {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -150,12 +163,14 @@ nav ul li a:hover {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 8px 15px rgba(52, 152, 219, 0.4);
 }
 
 .btn:hover {
   background-color: #2980b9;
   transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(52, 152, 219, 0.6);
 }
 
 /*ABOUT*/
