@@ -408,19 +408,7 @@ nav ul li a:hover {
 /* 768px */
 @media (max-width: 768px) {
   .logo {
-    flex-direction: column;
-    gap: 4px;
-    font-size: 0.85rem;
-  }
-
-  .logo-main {
-    padding: 3px 6px;
-    font-size: 0.9rem;
-  }
-
-  .logo-sub {
-    font-size: 0.65rem;
-    letter-spacing: 0.5px;
+    display: none;
   }
 
   header {
@@ -433,19 +421,12 @@ nav ul li a:hover {
     position: static;
   }
 
-
   nav ul {
     gap: 8px;
   }
 
   nav ul li a {
     padding: 6px 10px;
-  }
-
-  .nav-login-btn {
-    padding: 6px 12px !important;
-    font-size: 13px !important;
-    font-weight: 500 !important;
   }
 
   .hero {
